@@ -430,7 +430,7 @@ Circus stats can generate a high cpu usage without any load you can set statsd
 in `/etc/circus/circusd.conf` to false if you don't need them.
 
 As of Ubuntu 16.04, there is no more /etc/circus/circusd.conf but /etc/circus/circusd.ini with endpoint
-configured for statsd. As statsd, is to false by default ( http://circus.readthedocs.io/en/latest/for-ops/configuration/ ), not comment the endpoint seems to make statsd  started.
+configured for statsd. As statsd, is to false by default ( http://circus.readthedocs.io/en/latest/for-ops/configuration/ ), don't comment the endpoint make statsd  started.
 Line to be commented in /etc/circus/circusd.ini to stop statsd : `stats_endpoint = tcp://127.0.0.1:5557`
 
 Taiga stores logs on the user home, making them available and immediately accessible when
